@@ -3,23 +3,56 @@
 <head>
     <meta charset="utf-8" />
     <title>Contact Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="Content/bootstrap.css" rel="stylesheet">
+    <link href="CSS/styles.css" rel="stylesheet" />
 </head>
+
 <body>
-    <h3>Contact Info</h3>
-    <p><strong>My Address: </strong>Queretaro #208 Bugambilias</p>
-    <p><strong>My Email: </strong>lorely.reyes@uttn.mx</p>
-    <p><strong>My Phone: </strong>+52 899 461 1942</p>
-    <hr />
-    <form action="mailto:lorely.reyes@uttn.mx" method="post" enctype="text/plain">
-        <label>Your Name:</label>
-        <input type="text" name="yourName" value="" /><br />
-        <label>Your Email:</label>
-        <input type="email" name="yourEmail" value="" /><br />
-        <label>Your Message:</label><br />
-        <textarea name="yourMessage" cols="5" rows="5"></textarea><br />
-        <input type="submit" value="Submit" />
-    </form>
-    <hr />
-    <a href="index.html">Go to My Homepage</a>
+    <div class="container">
+        <div class="jumbotron">
+            <h3>Contact Info</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <p><strong>My Address: </strong>Queretaro #208 Bugambilias</p>
+                    <p><strong>My Email: </strong>lorely.reyes@uttn.mx</p>
+                </div>
+                <div class="col-md-6">
+                    <p><strong>My Phone: </strong>+52 899 461 1942</p>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <form action="mailto:lorely.reyes@uttn.mx" method="post" enctype="text/plain">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Your Name:</label>
+                        <input class="form-control" type="text" name="yourName" value="" />
+                    </div>
+                    <div class="form-group">
+                        <label>Your Email:</label>
+                        <input class="form-control" type="email" name="yourEmail" value="" />
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Your Message:</label><br />
+                        <textarea class="form-control" name="yourMessage" cols="5" rows="5"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <input class="btn btn-dark" type="submit" value="Submit" />
+                </div>
+            </div>
+        </form>
+        <hr />
+        <a href="index.html">Go to My Homepage</a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>
